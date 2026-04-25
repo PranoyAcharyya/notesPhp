@@ -1,0 +1,1 @@
+ALTER TABLE Notes ADD COLUMN category VARCHAR(100);

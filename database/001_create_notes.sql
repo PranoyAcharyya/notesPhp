@@ -1,0 +1,8 @@
+CREATE TABLE Notes (
+  noteId INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(200) NOT NULL,
+  description VARCHAR(2000),
+  date VARCHAR(255),
+  featureImage VARCHAR(255)
+);
+
