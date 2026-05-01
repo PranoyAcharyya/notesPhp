@@ -1,3 +1,8 @@
+<?php
+
+require_once __DIR__ . '/../config.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +25,12 @@
 
             <!-- Buttons -->
             <div class="flex items-center gap-3">
-                <button class="px-4 py-2 rounded-lg bg-[#fc0356] text-white font-medium hover:opacity-90 transition">
+                <a href="<?= BASE_URL ?>pages/addNotes.php" class="px-4 py-2 rounded-lg bg-[#fc0356] text-white font-medium hover:opacity-90 transition">
                     Add Notes
-                </button>
-                <button class="px-4 py-2 rounded-lg border border-white text-white font-medium hover:bg-white hover:text-black transition">
+                </a>
+                <a class="px-4 py-2 rounded-lg border border-white text-white font-medium hover:bg-white hover:text-black transition">
                     See Notes
-                </button>
+                </a>
             </div>
 
         </div>
