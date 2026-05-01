@@ -6,6 +6,8 @@
 
 require __DIR__ . '../../database/db.php';
 
+include __DIR__. '../../config.php';
+
 try{
 
 if (isset($_POST['submit'])) {
@@ -39,7 +41,6 @@ if (isset($_POST['submit'])) {
         ':category' => $category
     ]);
 
-     echo "Data inserted successfully!";
 
     }
 
@@ -67,7 +68,7 @@ if (isset($_POST['submit'])) {
             Your post has been saved successfully.
         </p>
 
-        <a href="index.php"
+        <a href="<?= BASE_URL  ?>"
            class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">
             Go to Home
         </a>
