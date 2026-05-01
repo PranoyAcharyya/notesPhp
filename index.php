@@ -3,7 +3,7 @@
 
 
     <!-- Hero Section -->
-<section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white min-h-screen">
+<section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white min-h-screen flex justify-center items-center">
   <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between">
 
     <!-- Left Content -->
@@ -38,5 +38,7 @@
 
   </div>
 </section>
+
+<?php include __DIR__. '/layout/Footer.php' ?>
 </body>
 </html>

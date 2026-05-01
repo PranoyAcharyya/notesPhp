@@ -42,7 +42,7 @@ try {
 
 ?>
 
-<div class="max-w-7xl mx-auto px-6 py-10">
+<div class="max-w-7xl mx-auto px-6 pt-30 pb-20">
 
     <h2 class="text-3xl font-bold text-gray-800 mb-8">📒 Notes</h2>
 
@@ -129,6 +129,7 @@ try {
     </div>
 
 </div>
+<?php include __DIR__. '/../layout/Footer.php' ?>
 </body>
 
 </html>

@@ -15,28 +15,28 @@ require_once __DIR__ . '/../config.php';
 
 <body>
     <!-- Header -->
-    <header class="w-full bg-black text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+   <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/10 text-white shadow-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
-            <!-- Logo -->
-            <a href="<?= BASE_URL ?>">
-                <h2 class="text-2xl font-bold tracking-wide">
-                    My<span class="text-[#fc0356]">Notes</span>
-                </h2>
+        <!-- Logo -->
+        <a href="<?= BASE_URL ?>">
+            <h2 class="text-2xl font-bold tracking-wide">
+                My<span class="text-[#fc0356]">Notes</span>
+            </h2>
+        </a>
+
+        <!-- Buttons -->
+        <div class="flex items-center gap-3">
+            <a href="<?= BASE_URL ?>pages/addNotes.php"
+               class="px-4 py-2 rounded-lg bg-[#fc0356] text-white font-medium hover:opacity-90 transition">
+                Add Notes
             </a>
 
-            <!-- Buttons -->
-            <div class="flex items-center gap-3">
-                <a href="<?= BASE_URL ?>pages/addNotes.php" class="px-4 py-2 rounded-lg bg-[#fc0356] text-white font-medium hover:opacity-90 transition">
-                    Add Notes
-                </a>
-                <a
-                    href="<?= BASE_URL ?>pages/NoteList.php ?>"
-                
-                class="px-4 py-2 rounded-lg border border-white text-white font-medium hover:bg-white hover:text-black transition">
-                    See Notes
-                </a>
-            </div>
-
+            <a href="<?= BASE_URL ?>pages/NoteList.php"
+               class="px-4 py-2 rounded-lg border border-white/30 text-white font-medium hover:bg-white hover:text-black transition">
+                See Notes
+            </a>
         </div>
-    </header>
+
+    </div>
+</header>
