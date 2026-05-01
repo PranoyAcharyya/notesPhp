@@ -6,7 +6,6 @@
 
 require __DIR__ . '../../database/db.php';
 
-include __DIR__. '../../config.php';
 
 try{
 
