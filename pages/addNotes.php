@@ -8,7 +8,7 @@ require __DIR__ . '../../database/db.php'
 
 ?>
 
-<div class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+<div class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8 mt-[100px] mb-[20px]">
 
   <h2 class="text-2xl font-semibold text-gray-800 mb-6">Create Post</h2>
 
@@ -58,7 +58,7 @@ require __DIR__ . '../../database/db.php'
       <select
         name="category"
         class="w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none">
-        <option>Select category</option>
+        <option value="">Select category</option>
         <option>Technology</option>
         <option>Business</option>
         <option>Lifestyle</option>
@@ -78,6 +78,8 @@ require __DIR__ . '../../database/db.php'
 
   </form>
 </div>
+
+<?php include __DIR__ . '/../layout/Footer.php'; ?>
 
 </body>
 
