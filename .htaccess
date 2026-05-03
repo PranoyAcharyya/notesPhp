@@ -9,3 +9,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Redirect to pages folder
 RewriteRule ^(.*)$ pages/$1 [L]
+
+# Error page
+ErrorDocument 404 /notesproject/pages/404.php
