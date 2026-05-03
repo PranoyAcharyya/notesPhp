@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Skip if request already inside /pages
+RewriteCond %{REQUEST_URI} !^/notesproject/pages/
+
+# If file not found in root
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect to pages folder
+RewriteRule ^(.*)$ pages/$1 [L]

@@ -27,12 +27,12 @@ require_once __DIR__ . '/../config.php';
 
         <!-- Buttons -->
         <div class="flex items-center gap-3">
-            <a href="<?= BASE_URL ?>pages/addNotes.php"
+            <a href="<?= BASE_URL ?>addNotes.php"
                class="px-4 py-2 rounded-lg bg-[#fc0356] text-white font-medium hover:opacity-90 transition">
                 Add Notes
             </a>
 
-            <a href="<?= BASE_URL ?>pages/NoteList.php"
+            <a href="<?= BASE_URL ?>NoteList.php"
                class="px-4 py-2 rounded-lg border border-white/30 text-white font-medium hover:bg-white hover:text-black transition">
                 See Notes
             </a>

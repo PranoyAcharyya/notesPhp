@@ -17,7 +17,7 @@
       </p>
 
       <div class="flex gap-4">
-        <a href="pages/addNotes.php"
+        <a href="addNotes.php"
            class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
           Create Note
         </a>

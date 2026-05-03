@@ -54,7 +54,7 @@ try {
 
                 <!-- Image -->
                 <img
-                    src="../uploads/<?php echo $result['featureImage']; ?>"
+                    src="/notesproject/uploads/<?php echo $result['featureImage']; ?>"
                     alt="<?php echo htmlspecialchars($result['title']); ?>"
                     class="w-full h-48 object-cover">
 
