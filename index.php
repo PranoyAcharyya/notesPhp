@@ -8,7 +8,7 @@
 
     <!-- Left Content -->
     <div class="max-w-xl">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 reveal-container" id="main-title">
         Capture Your Thoughts <br> Anytime, Anywhere
       </h1>
 
