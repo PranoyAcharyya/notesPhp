@@ -75,7 +75,10 @@ try {
 
                     <div class="flex justify-between items-center text-sm text-gray-500">
                         <span><?php echo htmlspecialchars($result['date']); ?></span>
-                        <a href="singleNote.php/?id=<?php echo $result['noteId'] ?>" class="text-blue-600 hover:underline">Read</a>
+                        <a href="singleNote.php?id=<?php echo $result['noteId'] ?>"
+                            class="text-blue-600 hover:underline">
+                            Read
+                        </a>
                     </div>
 
                 </div>
@@ -84,52 +87,54 @@ try {
 
         <?php endforeach; ?>
 
-        <div class="flex justify-center mt-10">
 
-            <ul class="flex items-center gap-2">
 
-                <!-- Prev Button -->
-                <?php if ($page > 1): ?>
-                    <li>
-                        <a href="?page=<?php echo $page - 1; ?>"
-                            class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">
-                            ← Prev
-                        </a>
-                    </li>
-                <?php endif; ?>
+    </div>
 
-                <!-- Page Numbers -->
-                <?php for ($i = 1; $i <= $numOfPages; $i++): ?>
-                    <li>
-                        <a href="?page=<?php echo $i; ?>"
-                            class="px-4 py-2 rounded-lg 
+    <div class="flex justify-center mt-10">
+
+        <ul class="flex items-center gap-2">
+
+            <!-- Prev Button -->
+            <?php if ($page > 1): ?>
+                <li>
+                    <a href="?page=<?php echo $page - 1; ?>"
+                        class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">
+                        ← Prev
+                    </a>
+                </li>
+            <?php endif; ?>
+
+            <!-- Page Numbers -->
+            <?php for ($i = 1; $i <= $numOfPages; $i++): ?>
+                <li>
+                    <a href="?page=<?php echo $i; ?>"
+                        class="px-4 py-2 rounded-lg 
                    <?php echo ($i == $page)
                         ? 'bg-blue-600 text-white'
                         : 'bg-gray-100 hover:bg-gray-200'; ?>">
 
-                            <?php echo $i; ?>
-                        </a>
-                    </li>
-                <?php endfor; ?>
+                        <?php echo $i; ?>
+                    </a>
+                </li>
+            <?php endfor; ?>
 
-                <!-- Next Button -->
-                <?php if ($page < $numOfPages): ?>
-                    <li>
-                        <a href="?page=<?php echo $page + 1; ?>"
-                            class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">
-                            Next →
-                        </a>
-                    </li>
-                <?php endif; ?>
+            <!-- Next Button -->
+            <?php if ($page < $numOfPages): ?>
+                <li>
+                    <a href="?page=<?php echo $page + 1; ?>"
+                        class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300">
+                        Next →
+                    </a>
+                </li>
+            <?php endif; ?>
 
-            </ul>
-
-        </div>
+        </ul>
 
     </div>
 
 </div>
-<?php include __DIR__. '/../layout/Footer.php' ?>
+<?php include __DIR__ . '/../layout/Footer.php' ?>
 </body>
 
 </html>

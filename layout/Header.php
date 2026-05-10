@@ -1,7 +1,8 @@
 <?php
 
 require_once __DIR__ . '/../config.php';
-
+$pageName = basename($_SERVER['PHP_SELF']);
+$blackPages = ['singleNote.php', 'NoteList.php', 'addNotes.php'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@ require_once __DIR__ . '/../config.php';
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
@@ -20,7 +21,9 @@ require_once __DIR__ . '/../config.php';
 
 <body>
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/10 text-white shadow-md border-b border-white/10">
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg 
+<?= in_array($pageName, $blackPages) ? 'bg-black' : 'bg-black/10'; ?> 
+text-white shadow-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
             <!-- Logo -->

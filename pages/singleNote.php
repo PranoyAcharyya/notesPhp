@@ -94,8 +94,9 @@ try {
 
             <!-- Edit Button -->
             <a
-                href="/edit.php?id=<?php echo $note['noteId']; ?>"
+                href="addNotes.php?id=<?php echo $note['noteId']; ?>"
                 class="group flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105">
+
                 <span class="text-sm font-semibold">
                     Edit
                 </span>
@@ -104,16 +105,18 @@ try {
             </a>
 
             <!-- Delete Button -->
-            <a
-                href="/delete.php?id=<?php echo $note['noteId']; ?>"
-                onclick="return confirm('Are you sure you want to delete this note?')"
+            <button
+                id="deleteBtn"
+                data-id="<?php echo $note['noteId']; ?>"
                 class="group flex items-center gap-3 bg-red-500 hover:bg-red-600 text-white px-5 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105">
+
                 <span class="text-sm font-semibold">
                     Delete
                 </span>
 
                 <i class="fa-solid fa-trash"></i>
-            </a>
+
+            </button>
 
         </div>
 
