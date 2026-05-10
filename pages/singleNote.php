@@ -85,12 +85,24 @@ try {
         </div>
 
     <?php endif; ?>
-
     <!-- Floating Action Button -->
     <div class="fixed bottom-8 right-8 z-50">
 
         <!-- Action Buttons -->
         <div id="fabMenu" class="hidden flex flex-col items-end gap-4 mb-4 absolute bottom-20 right-0">
+
+            <!-- back button -->
+
+            <a
+                href="NoteList.php"
+                class="group flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105">
+
+                <span class="text-sm font-semibold">
+                    Back
+                </span>
+
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
 
             <!-- Edit Button -->
             <a
