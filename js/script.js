@@ -60,9 +60,23 @@ window.onload = () => {
   ];
 
   revealElements.forEach((selector, i) => {
-    tl.fromTo(selector,
-      { y: "100%", clipPath: "inset(0 0 100% 0)" },
-      { y: "0%", clipPath: "inset(0 0 0% 0)", duration: 1, ease: "power3.out" },
+    const element = document.querySelector(selector);
+
+    // Skip if element not found
+    if (!element) return;
+
+    tl.fromTo(
+      element,
+      {
+        y: "100%",
+        clipPath: "inset(0 0 100% 0)",
+      },
+      {
+        y: "0%",
+        clipPath: "inset(0 0 0% 0)",
+        duration: 1,
+        ease: "power3.out",
+      },
       i * 0.4
     );
   });
