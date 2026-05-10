@@ -75,7 +75,7 @@ try {
 
                     <div class="flex justify-between items-center text-sm text-gray-500">
                         <span><?php echo htmlspecialchars($result['date']); ?></span>
-                        <a href="#" class="text-blue-600 hover:underline">Read</a>
+                        <a href="singleNote.php/?id=<?php echo $result['noteId'] ?>" class="text-blue-600 hover:underline">Read</a>
                     </div>
 
                 </div>
